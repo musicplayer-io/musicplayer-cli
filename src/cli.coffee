@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-MusicPlayerAPI = require "musicplayer-api"
+MusicPlayerAPI = require "musicplayer"
 program = require "commander"
 pkg = require "../package.json"
 

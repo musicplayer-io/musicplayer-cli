@@ -6,9 +6,28 @@
   "license": "GPLv3",
   "dependencies": {
     "commander": "^2.8.1",
-    "musicplayer": "file:../musicplayer-api",
-    "musicplayer-api": "file:../musicplayer-api",
+    "musicplayer": "^1.0.1",
     "os-homedir": "^1.0.0"
+  },
+  "keywords": [
+    "music",
+    "player",
+    "tool",
+    "cli"
+  ],
+  "homepage": "http://www.musicplayer.io",
+  "bugs": {
+    "url": "https://github.com/musicplayer-io/musicplayer-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/musicplayer-io/musicplayer-cli.git"
+  },
+  "preferGlobal": true,
+  "author": {
+    "name": "Ilias Ismanalijev",
+    "email": "hello@illyism.com",
+    "url": "http://il.ly"
   },
   "bin": {
     "musicplayer": "./bin/musicplayer"
