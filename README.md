@@ -4,14 +4,14 @@
 
 ### Installation
 
-´´´
+```
 $ npm install -g musicplayer-cli
-´´´
+````
 
 
 ### Usage
 
-´´´
+```
 Usage: musicplayer [command]
 
 
@@ -32,4 +32,4 @@ Options:
 
   -h, --help     output usage information
   -V, --version  output the version number
-´´´
+```
