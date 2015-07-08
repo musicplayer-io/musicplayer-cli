@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 MusicPlayerAPI = require "musicplayer"
 program = require "commander"
 pkg = require "../package.json"
@@ -72,7 +70,7 @@ program
 
 program
   .command "backward"
-  .alias "previous"
+  .alias "prev"
   .description "Previous song"
   .action (env) ->
     API.backward.post (res) ->
@@ -97,6 +95,14 @@ program
     else
       API.subreddits.get (res) ->
         console.log "Subreddits:", res.data.join(", ")
+  .on "--help", () ->
+    console.log """
+      Examples:
+        $ musicplayer subreddits listentothis+music
+        $ musicplayer subreddits atmosphericdnb
+
+        $ musicplayer subreddits
+    """
 
 program
   .command "user"
@@ -127,7 +133,10 @@ program
         🔗  url        #{song.url}
       """
 
-
-
+program
+  .command "*"
+  .description "Help"
+  .action () ->
+    program.help()
 
 program.parse process.argv
