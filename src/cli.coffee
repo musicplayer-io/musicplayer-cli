@@ -26,6 +26,8 @@ catch error
 
 API = MusicPlayerAPI conf
 
+ok = "👍  OK"
+
 program
   .version "#{pkg.version}"
   .command "play"
@@ -36,7 +38,7 @@ program
       if isPlaying.data is false
         API.play.post (res) ->
           return console.log res.message if res.status is false
-          console.log "OK"
+          console.log ok
 
 
 program
@@ -49,7 +51,7 @@ program
       if isPlaying.data is true
         API.play.post (res) ->
           return console.log res.message if res.status is false
-          console.log "OK"
+          console.log ok
 
 program
   .command "toggle"
@@ -57,7 +59,7 @@ program
   .action (env) ->
     API.play.post (res) ->
       return console.log res.message if res.status is false
-      console.log "OK"
+      console.log ok
 
 program
   .command "forward"
@@ -66,7 +68,7 @@ program
   .action (env) ->
     API.forward.post (res) ->
       return console.log res.message if res.status is false
-      console.log "OK"
+      console.log ok
 
 program
   .command "backward"
@@ -75,7 +77,7 @@ program
   .action (env) ->
     API.backward.post (res) ->
       return console.log res.message if res.status is false
-      console.log "OK"
+      console.log ok
 
 program
   .command "state"
@@ -125,8 +127,10 @@ program
       return console.log res.message if res.status is false
       song = res.data
       console.log """
-        👤  author     #{song.author}
-        🌍  subreddit  #{song.subreddit}
+        🎵  #{song.title}
+        👤  /u/#{song.author}
+        🌍  /r/#{song.subreddit}
+
         🎵  type       #{song.type}
         📅  age        #{song.created_ago} ago
         👍  karma      #{song.score}

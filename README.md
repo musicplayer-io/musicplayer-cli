@@ -33,3 +33,44 @@ Options:
   -h, --help     output usage information
   -V, --version  output the version number
 ```
+
+
+#### Examples
+
+```
+$ musicplayer song
+
+🎵  Heretoir - To Follow The Sun
+👤  /u/Umskiptar
+🌍  /r/postrock
+
+🎵  type       youtube
+📅  age        36 hours ago
+👍  karma      3
+🔗  url        https://www.youtube.com/watch?v=qnUGs4vZQ10
+```
+
+
+```
+$ musicplayer user
+
+👤  username         illyism
+🔗  link karma       6078
+💬  comment karma    2739
+```
+
+
+```
+$ musicplayer subreddits listentothis+music
+
+Subreddits sent: listentothis+music
+```
+
+
+```
+$ musicplayer play
+$ musicplayer pause
+$ musicplayer toggle
+
+👍  OK
+```
