@@ -1,6 +1,12 @@
-## Music Player CLI
 
-> Command Line Interface for the Music Player
+<h1 align="center">
+  <br>
+  <img width="650" src="https://cloud.githubusercontent.com/assets/304283/8581176/632da968-25bf-11e5-828a-c55ceb5300a8.jpg" alt="music player cli">
+  <br>
+  <br>
+</h1>
+
+> Control the music player from your command line.
 
 ### Installation
 
