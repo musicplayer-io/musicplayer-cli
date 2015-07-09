@@ -6,6 +6,10 @@
   <br>
 </h1>
 
+<h1 align="center">
+  <img width="560" src="https://cloud.githubusercontent.com/assets/304283/8592344/d3ff640a-262e-11e5-971f-ed21165dd557.jpg" alt="musicplayer-cli">
+</h1>
+
 > Control the music player from your command line.
 
 ### Installation
