@@ -1,13 +1,18 @@
 {
   "name": "musicplayer-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "API for the Music Player",
-  "author": "Ilias Ismanalijev",
+  "author": {
+    "name": "Ilias Ismanalijev",
+    "email": "hello@illyism.com",
+    "url": "http://il.ly"
+  },
   "license": "GPLv3",
   "dependencies": {
     "commander": "^2.8.1",
     "musicplayer": "^1.0.1",
-    "os-homedir": "^1.0.0"
+    "os-homedir": "^1.0.0",
+    "readline-sync": "^1.2.19"
   },
   "keywords": [
     "music",
@@ -24,11 +29,6 @@
     "url": "https://github.com/musicplayer-io/musicplayer-cli.git"
   },
   "preferGlobal": true,
-  "author": {
-    "name": "Ilias Ismanalijev",
-    "email": "hello@illyism.com",
-    "url": "http://il.ly"
-  },
   "bin": {
     "musicplayer": "./bin/musicplayer"
   },
