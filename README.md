@@ -14,6 +14,8 @@
 
 ### Installation
 
+This is a command line tool running on [node.js](http://nodejs.org/). You'll need that to install and run this tool. After your installation is completed, run the following in your terminal:
+
 ```
 $ npm install -g musicplayer-cli
 ````
